@@ -8,7 +8,12 @@ using System;
 using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
-{
+{   
+    /// <summary>
+    /// Clase modificada para aplicar DIP, ahora al implementar esta interfaz esta clase aún puede
+    /// tomarse como parámetro por los printer, así como cualquier otro subtipo de IRecipeContent,
+    /// a su vez los cambios en Recipe ya no afectan o ponen en peligro el funcionamiento de los printer.
+    /// </summary>
     public class Recipe : IRecipeContent
     {
         // Cambiado por OCP
